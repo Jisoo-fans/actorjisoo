@@ -434,11 +434,11 @@
 			$this
 				.on('submit', function() {
 
-					$this.find('input[type=text],input[type=password],textarea')
+					$this.find('input[type=name],input[type=password]')
 						.each(function(event) {
 
 							var i = $(this);
-
+						
 							if (i.attr('name').match(/-polyfill-field$/))
 								i.attr('name', '');
 

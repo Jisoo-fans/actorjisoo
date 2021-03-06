@@ -11,8 +11,9 @@
 		<!-- Header -->
 			<section id="header">
 				<header class="major">
-					<h1>Our Plans</h1>
-					<p>Lets support Ji Soo</a></p>				
+					<h1>Welcome</h1>
+					<br/>
+					<h2 id="nameg"> </h2>			
 				</header>
 			</section>
 
@@ -52,6 +53,17 @@
 			</section>
 
 		<!-- Scripts -->
+			<script>
+				const queryString = window.location.search;
+	
+				const urlParams = new URLSearchParams(queryString);
+				const firstName = urlParams.get('name');
+				document.getElementById('nameg').innerHTML = firstName;
+				const userEmail = urlParams.get('email');
+		
+
+			</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

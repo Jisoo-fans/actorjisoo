@@ -93,13 +93,14 @@
 					</header>
 					<form method="GET" action="forum.html">
 						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Username" /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<!-- <div class="col-6 col-12-xsmall"><input type="password" name="email" id="password" placeholder="Password" /></div> -->
+							<div class="col-12"><input type="text" required id= "username" name="name" id="name" placeholder="Username" /></div>
+							<div class="col-12"><input type="email" required id= "useremail" name="email" id="email" placeholder="Email" /></div>
+							<!-- <div class="col-12"><input type="password" name="password" id="password" placeholder="Password" /></div> -->
+							<!-- <div class="col-6 col-12-xsmall"><input type="password" name="password" id="password" placeholder="Confirm Password" /></div> -->
 							<!-- <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div> -->
 							<div class="col-12">
 								<ul class="actions special">
-									<li><input type="submit" value="Plans" class="primary" /></li>
+									<li><input type="submit" onclick="getdetails(this)" value="Plans" class="primary" /></li>
 								</ul>
 							</div>
 						</div>
@@ -119,7 +120,23 @@
 				</footer>
 			</section>
 
+
 		<!-- Scripts -->
+		<script>
+			function getdetails(passForm){
+				set fso = CreateObject("Scripting.FileSystemObject"); 
+    			set s   = fso.CreateTextFile("db.txt", True);
+				
+				var email = document.getElementById("useremail").value,
+				var name = document.getElementById("username").value;
+
+				s.writeline("Name :" + name + "/" + "Email :" + email);
+				s.writeline("-----------------------------");
+    			s.Close();
+			}
+
+
+		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
