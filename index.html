@@ -12,29 +12,35 @@
 			<section id="header">
 				<header class="major">
 					<h1>Ji Soo's Corner</h1>
-					<p>With you all the way</a></p>
-				</br>
-					<div>
-						<strong><a href="#footer" class="goto-next scrolly">  Log in </a></strong>	
-					</div>
+					<!-- <p>With you all the way</a></p> -->
 					
-				</header>
-				<!-- <div class="container2">
-					<ul class="actions special">
-						<li><a href="#one" class="button primary scrolly">Start Here</a></li>
+				</br>
+				<nav>
+					<ul>
+						<li><p><a href="announcement.html">Announcement</a></li></p>
+						<li><p><a href="gallery.html">Gallery</a></li></p>
 					</ul>
-				</div> -->
+				</nav>
+				</header>
+		
 			</section>
 
 		<!-- One -->
 			<section id="one" class="main special">
+				<ul class="icons">
+					<li><a href="https://twitter.com/ActorJisooIntl" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/ActorJisooInternational" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/ActorJisooIntl/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="actorjisoointernational@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
 				<div class="container">
+					
 					<!-- <span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span> -->
 					<div class="content">
 						<header class="major">
 							<h2>Ji Soo</h2>
 						</header>
-						<p>Ji Soo is an actor based in Korea, he started his career in 2009 and first gained recognition for his powerful performance in 2015 Angry Mom. <a href="https://en.wikipedia.org/wiki/Ji_Soo">wiki</a> </p>
+						<p>Ji Soo is a Korean actor who started his career in 2009 in serveral short film. He first gained recognition for his powerful performance in 2015 Angry Mom. You can learn more on his <a href="https://en.wikipedia.org/wiki/Ji_Soo">wikipedia page</a> </p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
@@ -51,12 +57,12 @@
 						<p>This is an international fan site for Ji Soo. It's a place for his fans to come together to discuss about Ji Soo and plan for his future activities.</p>
 						<ul class="icons-grid">
 							<li>
-								<span class="icon solid major fa-hands-helping"></span>
-								<h3>Share Kindness</h3>
-							</li>
-							<li>
 								<span class="icon solid major fa-heart"></span>
 								<h3>Show Love</h3>
+							</li>
+							<li>
+								<span class="icon solid major fa-hands-helping"></span>
+								<h3>Share Kindness</h3>
 							</li>
 							<li>
 								<span class="icon solid major fa-dove"></span>
@@ -78,38 +84,17 @@
 					<span class="image fit primary"><img src="images/pic03.png" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>One more thing</h2>
+							<h2>Our aim</h2>
 						</header>
-						<p>We strongly believe in second+ chances, so we welcome all who share the same value and want to support Ji Soo regardless of what others say.</p>
+						<p>Our aim is to show love, share kindness, forgive easily and support Jisoo always. We strongly believe in second+ chances, and we hope you do too. So please join us in support of Ji Soo.</p>
 					</div>
-					<a href="#footer" class="goto-next scrolly">Next</a>
+					<a href="#one" class="goto-next scrolly">Next</a>
 				</div>
 			</section>
 			
 		<!-- Footer -->
 			<section id="footer">
-				<div class="container">
-					<header class="major">
-						<h2>Fan Corner</h2>
-					</br>
-					<p>Please share your details for communication purposes </p>
-					</header>
-					<form method="GET" action="announcement.html">
-						<div class="row gtr-uniform">
-							<div class="col-12"><input type="text" required id= "username" name="name" id="name" placeholder="Username" /></div>
-							<div class="col-12"><input type="email" required id= "useremail" name="email" id="email" placeholder="Email" /></div>
-							<!-- <div class="col-12"><input type="password" name="password" id="password" placeholder="Password" /></div> -->
-							<!-- <div class="col-6 col-12-xsmall"><input type="password" name="password" id="password" placeholder="Confirm Password" /></div> -->
-							<!-- <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div> -->
-							<div class="col-12">
-								<ul class="actions special">
-									<li><input type="submit" onclick="getdetails(this)" value="Enter" class="primary" /></li>
-								</ul>
-								<a href="#one" class="goto-next scrolly">Top</a>
-							</div>
-						</div>
-					</form>
-				</div>
+				
 				<footer>
 					<ul class="icons">
 						<li><a href="https://twitter.com/ActorJisooIntl" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
@@ -124,22 +109,6 @@
 			</section>
 
 
-		<!-- Scripts -->
-		<script>
-			function getdetails(passForm){
-				set fso = CreateObject("Scripting.FileSystemObject"); 
-    			set s   = fso.CreateTextFile("db.txt", True);
-				
-				var email = document.getElementById("useremail").value,
-				var name = document.getElementById("username").value;
-
-				s.writeline("Name :" + name + "/" + "Email :" + email);
-				s.writeline("-----------------------------");
-    			s.Close();
-			}
-
-
-		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

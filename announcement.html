@@ -10,18 +10,21 @@
 
 		<!-- Header -->
 			<section id="header">
+				
 				<header class="major">
-					<h1>Welcome</h1>
-					<br/>
-					<h2 id="username"> </h2>			
-				</header>
-				<!-- <div class="container">
-					<ul class="actions special">
-							<li><a href="#first" class="button primary scrolly">Annoucement</a></li>
-							<li><a href="forum.html" class="button primary scrolly">Forum</a></li>
-							<li><a href="gallery.html" class="button primary scrolly">Gallery</a></li>
+					<h1>Announcement</h1>	
+				</br>
+				<nav>
+					<ul>
+						<li><p><a href="index.html">Home</a></li></p>
+						<li><p><a href="#footer">Forum</a></li></p>
+						<li><p><a href="gallery.html">Gallery</a></li></p>
 					</ul>
-				</div> -->
+				</nav>
+				</header>
+	
+			
+	
 			</section>
 
 		<!-- Introduction
@@ -40,33 +43,53 @@
 
 <!-- First Section -->
 <section id="first" class="main special">
+	<ul class="icons">
+		<li><a href="https://twitter.com/ActorJisooIntl" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+		<li><a href="https://www.facebook.com/ActorJisooInternational" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+		<li><a href="https://www.instagram.com/ActorJisooIntl/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+		<li><a href="actorjisoointernational@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+	</ul>
 	<div class="container">
 		<div class="content">
 		<header class="major">
-			<h2>Annoucement</h2>
+			<h2></h2>
 		</header>
 	<ul class="features">
 		<li>
 			<span class="image fit primary"><img src="images/thumbs/01.jpg" alt="" /></span>
-			<h3>Birthday</h3>
-			<p>As you all know Ji Soo's birthday is coming up on the 30th of March. We would like to send him something to celebrate his day. #ActorJiSooBirthday</p>
+			
+			<h2>Birthday</h2>
+			<p>Ji Soo's birthday is coming up on the <strong> 30th of March </strong> so we need to celebrate it with him. If you want to contribute please do so and use #ActorJiSooBirthday to spread the message. <a href="#intro">details below</a></p>
 		</li>
 		<li>
 			<!-- <span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span> -->
-			<h3>Our community</h3>
+			<h2>Our community</h2>
 			<p>We all need to do out part and find more like minded people that love Ji Soo and believe in the power of second chances.</p>
 		</li>
 		<li>
 			<!-- <span class="image fit primary"><img src="images/pic04.jpg" alt="" /></span> -->
-			<h3>Military Duties</h3>
+			<h2>Military Duties</h2>
 			<p>As you might all know now, Ji Soo will be enlisting in October, so we need to start planning for this soon.</p>
 		</li>
 	</ul>
-	<p>See more details in <a href="forum.html"> Forum </a> or go to <a href="gallery.html"> Gallery</a> </p>
-<!-- </div>
-	<a href="#second" class="goto-next scrolly">Next</a>
-</div> -->
+	<header class="major">
+		<a href="#" class="button primary scrolly">Contribute </a>
+	</header>
 </section>
+
+	<!-- Introduction -->
+			<section id="intro" class="main special">
+				<div class="container">
+					 <span class="image fit primary"><img src="images/pic03.png" alt="" /></span> 
+					<div class="content">
+						<header class="major">
+							<h2>Birthday Plan</h2>
+						</header>
+						<p> Birthday details  </p>
+					<!-- </div>
+					<a href="#second" class="goto-next scrolly">Next</a>
+				</div> -->
+			</section>
 
 <!-- Second Section -->
 <section id="second" class="main special">
@@ -75,7 +98,7 @@
 		<!-- <header class="major">
 			<a href="discuss.html" class="button primary scrolly">Join the discussion </a>
 		</header> -->
-		<p class="content">Official Links</p>
+		<h2 class="content">Official Links</h2>
 		<ul class="statistics">
 			<li class="style1">
 				<span class="icon brands alt fa-wikipedia-w"></span>
@@ -100,13 +123,34 @@
 		</ul>
 		 <!-- <p class="content">nknknknlk</p> -->
 </div>
-	<a href="#header" class="goto-next scrolly">Next</a>
+	<a href="#footer" class="goto-next scrolly">Next</a>
 </div> 
 </section>
 
 		<!-- Footer -->
 			<section id="footer">
-			
+				<div class="container">
+					<header class="major">
+						<h2>Fan Corner</h2>
+					</br>
+					<p>Please log in to enter forum </p>
+					</header>
+					<form method="GET" action="forum.html">
+						<div class="row gtr-uniform">
+							<div class="col-12"><input type="text" required id= "username" name="name" id="name" placeholder="Username" /></div>
+							<div class="col-12"><input type="email" required id= "useremail" name="email" id="email" placeholder="Email" /></div>
+							<!-- <div class="col-12"><input type="password" name="password" id="password" placeholder="Password" /></div> -->
+							<!-- <div class="col-6 col-12-xsmall"><input type="password" name="password" id="password" placeholder="Confirm Password" /></div> -->
+							<!-- <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div> -->
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" onclick="getdetails(this)" value="Enter Forum" class="primary" /></li>
+								</ul>
+								<a href="#first" class="goto-next scrolly">Top</a>
+							</div>
+						</div>
+					</form>
+				</div>
 				<footer>
 					<ul class="icons">
 						<li><a href="https://twitter.com/ActorJisooIntl" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
@@ -120,18 +164,22 @@
 				</footer>
 			</section>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script>
-				const queryString = window.location.search;
+				function getdetails(passForm){
+					set fso = CreateObject("Scripting.FileSystemObject"); 
+					set s   = fso.CreateTextFile("db.txt", True);
+					
+					var email = document.getElementById("useremail").value,
+					var name = document.getElementById("username").value;
 	
-				const urlParams = new URLSearchParams(queryString);
-				const firstName = urlParams.get('name');
-				document.getElementById('username').innerHTML = firstName;
-				const userEmail = urlParams.get('email');
-		
-
+					s.writeline("Name :" + name + "/" + "Email :" + email);
+					s.writeline("-----------------------------");
+					s.Close();
+				}
+	
+	
 			</script>
-
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

@@ -10,19 +10,29 @@
 
 		<!-- Header -->
 			<section id="header">
+			
 				<header class="major">
-					<h1>Forum</h1>
-					<!-- <br/>
-					<h2 id="username"> </h2> -->
-					<ul class="actions special">
-							<li><a href="announcement.html" >Announcement</a></li>
-							<li><a href="gallery.html" >Gallery</a></li>
-					</ul>			
+					<h1>Welcome</h1>
+					<br/>
+					<h2 id="username"> </h2>
+					<nav>
+						<ul>
+							<li><p><a href="announcement.html">Announcement</a></li></p>
+							<li><p><a href="gallery.html">Gallery</a></li></p>
+						</ul>
+					</nav>
 				</header>
+				
 			</section>
 
 					<!-- Introduction -->
 			<section id="intro" class="main special">
+				<ul class="icons">
+					<li><a href="https://twitter.com/ActorJisooIntl" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/ActorJisooInternational" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/ActorJisooIntl/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="actorjisoointernational@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
 				<div class="container">
 					<div class="content">
 						<header class="major">
@@ -50,6 +60,18 @@
 					</ul>
 				</footer>
 			</section>
+
+			<!-- Scripts -->
+			<script>
+				const queryString = window.location.search;
+	
+				const urlParams = new URLSearchParams(queryString);
+				const firstName = urlParams.get('name');
+				document.getElementById('username').innerHTML = firstName;
+				const userEmail = urlParams.get('email');
+		
+
+			</script>
 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
