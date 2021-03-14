@@ -2873,6 +2873,11 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 #dddddd;
 		}
 
+		#footer .gframe {
+			width: 640px;
+			height: 1307px;
+		}
+
 		#footer footer {
 			bottom: 2em;
 			color: rgba(255, 255, 255, 0.5);
@@ -3152,6 +3157,12 @@ input, select, textarea {
 				#footer .container {
 					padding: 3em 3em 1em 3em ;
 				}
+				#footer .gframe {
+		
+					width: 420px;
+					height: 1307px;
+					position: relative;
+				}
 
 				#footer footer {
 					padding: 3em 3em 1em 3em ;
@@ -3215,6 +3226,12 @@ input, select, textarea {
 
 			#footer .container {
 				padding: 3em 1.5em 1em 1.5em ;
+			}
+
+			#footer .gframe {
+				width: 400px;
+				height: 1307px;
+				position: relative;
 			}
 
 	}
