@@ -2857,6 +2857,10 @@ input, select, textarea {
 				min-width: 10em;
 			}
 
+	#intro .gframe{
+		width: 640px;
+		height: 1307px;
+	}
 			
 /* Footer */
 
@@ -3146,6 +3150,12 @@ input, select, textarea {
 				margin-left: -40%;
 				padding: 3em;
 			}
+		
+			#intro .gframe{
+				width: 420px;
+				height: 1307px;
+				position: relative;
+			}
 
 		/* Footer */
 
@@ -3222,6 +3232,11 @@ input, select, textarea {
 					display: none;
 				}
 
+			#intro .gframe{
+				width: 400px;
+				height: 1307px;
+				position: relative;
+				}
 		/* Footer */
 
 			#footer .container {
