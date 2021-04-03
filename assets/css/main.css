@@ -2759,7 +2759,12 @@ input, select, textarea {
 				vertical-align: middle;
 				width: calc(100% - 10px);
 			}
-
+			.main .container .g-signin2 {
+				display: inline-block;
+				margin-right: 1px;
+				vertical-align: middle;
+				width: calc(100% - 10px);
+			}
 			
 
 		.main .goto-next {

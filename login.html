@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ji Soo we love you!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <meta name="google-signin-scope" content="profile email"> -->
+    	<meta name="google-signin-client_id" content="683965358195-td8anrdoiinihn923urbjfeprks41s0m.apps.googleusercontent.com">
+    	<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header class="major">
+					<h1>Welcome to Ji Soo's Fan Site</h1>
+					<p><a href="#one">Please sign in</a></p>
+				</br>
+				<nav>
+					<ul>
+						<li><p><a href="gallery.html">Gallery</a></li></p>
+					</ul>
+				</nav>
+				</header>
+		
+			</section>
+
+			<!-- Login with-->
+			<section id="one" class="main special">
+				<ul class="icons">
+					<li><a href="https://twitter.com/ActorJisooIntl" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/ActorJisooInternational" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/ActorJisooIntl/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="actorjisoointernational@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="icons">
+					<li><div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+						<script>
+							  function onSignIn(googleUser) {
+					// Useful data for your client-side scripts:
+					var profile = googleUser.getBasicProfile();
+					console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+					console.log('Full Name: ' + profile.getName());
+					console.log('Given Name: ' + profile.getGivenName());
+					console.log('Family Name: ' + profile.getFamilyName());
+					console.log("Image URL: " + profile.getImageUrl());
+					console.log("Email: " + profile.getEmail());
+			
+					// The ID token you need to pass to your backend:
+					var id_token = googleUser.getAuthResponse().id_token;
+					console.log("ID Token: " + id_token);
+				  }
+				</script></li>
+				
+				</ul>
+				
+			</section>
+
+
+
+			
+		<!-- Footer -->
+		
+			<section id="footer">
+				<div class="container">
+					<p>Thank you for visiting</p> 
+					<h3><a href="#header" class="goto-next scrolly">Top</a></h3>
+				</div>
+				
+				<footer>
+					<ul class="icons">
+						<li><a href="https://twitter.com/ActorJisooIntl" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/ActorJisooInternational" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/ActorJisooIntl/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="actorjisoointernational@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Ji Soo we love you @copyright</li>
+					</ul>
+				</footer>
+			</section>
+
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
